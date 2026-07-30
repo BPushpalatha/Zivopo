@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-label="ZIVOPO logo">
+  <rect width="640" height="240" rx="36" fill="#071A2F"/>
+  <circle cx="136" cy="120" r="66" fill="#D4AF37"/>
+  <path d="M88 118c0-43 35-78 78-78 27 0 51 14 66 36l-34 22c-8-12-22-19-36-19-25 0-45 20-45 45v4h80v32H88z" fill="#071A2F"/>
+  <text x="245" y="105" fill="#F7F3E8" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700">ZIVOPO</text>
+  <text x="245" y="151" fill="#D4AF37" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="4">BEYOND CONNECTIONS</text>
+</svg>

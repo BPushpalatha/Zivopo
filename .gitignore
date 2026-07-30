@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+coverage
+.env
+.env.local
+.env.*.local
+.vscode
+.DS_Store
+*.log
+build
+android/app/debug
+ios/Pods

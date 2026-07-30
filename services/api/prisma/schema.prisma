@@ -1,0 +1,45 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  CUSTOMER
+  PROFESSIONAL
+  STUDENT
+  ADMIN
+  SUPER_ADMIN
+}
+
+enum ServiceCategoryType {
+  STUDENT_HELPER
+  ELDER_CARE
+  CORPORATE_CONCIERGE
+  APARTMENT_SUPPORT
+  EVENT_WORKFORCE
+}
+
+model User {
+  id          String   @id @default(uuid())
+  email       String   @unique
+  phone       String   @unique
+  displayName String
+  password    String
+  role        Role     @default(CUSTOMER)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model ServiceCategory {
+  id          String                @id @default(uuid())
+  title       String
+  description String
+  slug        String                @unique
+  type        ServiceCategoryType
+  createdAt   DateTime              @default(now())
+  updatedAt   DateTime              @updatedAt
+}
